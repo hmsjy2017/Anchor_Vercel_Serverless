@@ -7,12 +7,12 @@ proxy:
         open: false
         minify: onlyMin
         endpoint: ['https://raw.githubusercontent.com/{{user}}/{{repo}}/{{version}}/{{path}}']
-        white_list: []
+        white_list: [*]
     npm:
         open: false
         minify: onlyMin
         endpoint: ['https://unpkg.com/{{package}}@{{version}}/{{path}}']
-        white_list: []
+        white_list: [lxgw-wenkai-screen-webfont]
     wordpress:
         plugin_open: false
         theme_open: false
