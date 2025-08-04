@@ -1,0 +1,16 @@
+{
+  "builds": [
+    {
+      "src": "api/index.go",
+      "use": "@vercel/go@2.0.0",
+      "config": { "maxLambdaSize": "15mb" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api"
+    }
+  ]
+}
+
